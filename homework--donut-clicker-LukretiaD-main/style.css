@@ -1,0 +1,183 @@
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Tahoma, sans-serif;
+  line-height: 1.5em;
+  font-size: 15px;
+  background-color: #55c9ffd1;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+  padding: 3em 3em;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  text-align: center;
+}
+
+
+header h1 {
+  margin-top: 50px;
+  font-family: 'Black Han Sans', sans-serif;
+  color: white;
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px
+}
+
+#donut {
+  line-height: .5em;
+}
+
+.donutbutn {
+  background-color: #55c9ffd1;
+  border: none;
+  cursor: pointer;
+}
+
+.infobtn {
+  background-color: #79502cee;
+  border: none;
+  color: white;
+  padding: 6px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 20px;
+  cursor: pointer;
+}
+
+.navbar {
+  text-align: center;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  padding: 1em 1em;
+  background-color: #a36f41;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(250, 250, 250);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn,
+.dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #e5d3b4;
+}
+
+.show {
+  display: block;
+}
+
+/*Modal Background*/
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Modal Content Box*/
+.modal-content {
+  background-color: #ffffff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  cursor: pointer;
+  text-align: center;
+}
+
+/*The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.itemcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: auto;
+  gap: 1em;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+
+footer {
+  background-color: #a36f41;
+  color: #fff;
+  padding: 2em 0;
+  text-align: center;
+  margin-top: 1.5em;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Donut Clicker</title>
+</head>
+
+<body>
+
+    <!--Creating a header with a dropdown menu-->
+    <nav>
+        <div class="navbar">
+            <!--Reset Button-->
+            <button onclick="location.reload()" id="restart" class="infobtn">Reset</button>
+            <div class="info">
+                <button class="infobtn" onclick="myFunction()">Info
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content" id="myDropdown">
+                    <!--Iteration 2, Feature 5: Info about company in a pop-up-->
+                    <a href. onClick="company()">About Company</a>
+                    <!--Iteration 2, Feature 6: Inspiration link that open in a new tab-->
+                    <a href. onClick="inspiration()">Inspiration</a>
+                    <!--Iteration 2, Feature 7: Create a model for developer's quick bio-->
+                    <!--Modal Button-->
+                    <a href. id="bioButton">About Developer</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--The Modal for Developer bio-->
+    <div id="bioModal" class="modal">
+        <!--Model Content-->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>About the Developer</p>
+            <p>Lukretia Deacon is a BFA graduate with years of experience in Art & Design. A fast learner, creative,
+                reliable and dedicated. Also,has great attention to detail and always ready to learn new things!
+                In her free time, she enjoys creating with her hands.</p>
+            <p><strong><a href. onClick="github()">Github</a></strong></p>
+            <p><strong><a href. onClick="portfolio()">Portfolio</a></strong></p>
+        </div>
+    </div>
+
+    <header>
+        <h1>Fred the Baker's Baking Company</h1>
+    </header>
+
+    <main>
+
+        <section id="donut">
+            <!-- Iteration 2, Feature 2: Created a click count element. -->
+            <h2><span id="result">0</span></h2>
+            <span>
+                <h2>Donuts Made!</h2>
+            </span>
+            <!--Per Second element-->
+            <h3>
+                <div id="donutPerSec"></div>
+            </h3>
+            <h3>
+                <p>Donuts Per Second</p>
+            </h3>
+            <!--Iteration 2, Feature 1: The button to click-->
+            <button id="donutButton"><img width="200" height="210" src="./images/donut.png" class="donutbutn"
+                    alt="click the donut"></button>
+            <p>Click the Donut!</p>
+        </section>
+
+        <!--Iteration 2, Feature 3: Creating a section for the Auto Clickers-->
+        <section id="autoclickers">
+            <div class="itemcontainer">
+
+                <!--Auto CLicker 1 : Helpers-->
+                <div class="item">
+                    <div class="containerImage"><img src="./images/helpers.png" class="itemImage" width="150px"
+                            height="170px;">
+                        <div class="purchaseButtonContainer">
+                            <button onclick="buyHelpers()" id="helperdis" class="infobtn">Purchase!</button>
+                        </div>
+                    </div>
+                    <div class="itemText">
+                        <p>Helpers <span id="helpersNum">0</span></p>
+                        <p>Cost: <span id="helpersCost">100 Donuts</span></p>
+
+                    </div>
+                </div>
+
+                <!--Auto Clicker 2: Ingredients-->
+                <div class="item2">
+                    <div class="containerImage"><img src="./images/ingred.png" class="itemImage" width="150px"
+                            height="170px;">
+                        <div class="purchaseButtonContainer">
+                            <button onclick="buyIngredients()" class="infobtn">Purchase!</button>
+                        </div>
+                    </div>
+                    <div class="itemText">
+                        <p>Ingredients <span id="ingredientsNum">0</span></p>
+                        <p>Cost: <span id="ingredientsCost">110 Donuts</span></p>
+
+                    </div>
+                </div>
+
+                <!--Auto Clicker 3: Equipment-->
+                <div class="item">
+                    <div class="containerImage"><img src="./images/equip.png" class="itemImage" width="150px"
+                            height="170px;">
+                        <div class="purchaseButtonContainer">
+                            <button onclick="buyEquip()" class="infobtn">Purchase!</button>
+                        </div>
+                    </div>
+                    <div class="itemText">
+                        <p>Equipment <span id="equipmentNum">0</span></p>
+                        <p>Cost: <span id="equipmentCost">121 Donuts</span></p>
+
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Fred the Baker's Baking Company
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
